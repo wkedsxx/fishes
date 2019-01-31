@@ -1,0 +1,22 @@
+#:kivy 1.10.1
+#:import hex kivy.utils.get_color_from_hex
+<FishesGame>:
+    
+    canvas:
+        Color:
+            rgba: hex('#03A9F4')
+        Rectangle:
+            size: self.size
+
+
+    Label:
+        text: 'Hello!!!'
+        font_size: 60
+        pos: ((root.width - self.width) / 2, (root.height - self.height) / 2)
+    
+
+    Image:
+
+        source: 'images/fish0.png'
+        size: app.fish0size
+        keep_ratio: True
